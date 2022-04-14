@@ -7,7 +7,7 @@
 #include <time.h>
 #include <cstdio>
 
-#define DIM	3	// 3x3 퍼즐
+#define DIM	5	// 5x5 퍼즐
 
 enum Direction { Left = 75, Right = 77, Up = 72, Down = 80 };
 static int DirKey[4] = { Left, Right, Up, Down };
@@ -28,7 +28,7 @@ static void init() {
 }
 static void display() {
 	system("cls");
-	printf("\t3x3 Puzzle\n\t");
+	printf("\t5x5 Puzzle\n\t");
 	printf("--------------\n\t");
 	for (int r = 0; r < DIM; r++) {
 		for (int c = 0; c < DIM; c++) {
